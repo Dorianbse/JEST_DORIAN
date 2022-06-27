@@ -18,7 +18,17 @@ function containsForbiddenWords(msg) {
     return false;
 }
 
+function add(x, y) {
+  return x + y;
+}
+
+function mul(x, y){
+  return x * y;
+}
+
 module.exports = {
     isPalindrom,
-    containsForbiddenWords
+    containsForbiddenWords,
+    add,
+    mul
 }
