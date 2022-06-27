@@ -39,6 +39,15 @@ function dateIsSuperior(a, b) {
 	return date1 > date2 ? 1 : -1
 }
 
+function dateIsValid(a) {
+    a = a.split('/').reverse().join('/');
+	var date = new Date(a);
+	if (date == "Invalid Date") {
+		return false;
+	}
+	return true;
+}
+
 module.exports = {
     isPalindrom,
     containsForbiddenWords,
