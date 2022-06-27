@@ -29,3 +29,13 @@ describe("Scénario 3 Date", () => {
         expect(app.dateIsSuperior("17/02/1999", "17/02/2001")).toEqual(-1);
     });
 });
+
+describe("Scénario 4 Date is valid", () => {
+    it("Date is valid", () => {
+        expect(app.dateIsValid("17/02/2001")).toEqual(true);
+    });
+
+    it("Date is NOT valid", () => {
+        expect(app.dateIsValid("17/26/1999")).toEqual(false);
+    });
+});
