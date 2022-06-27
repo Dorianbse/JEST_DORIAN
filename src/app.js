@@ -52,5 +52,7 @@ module.exports = {
     isPalindrom,
     containsForbiddenWords,
     add,
-    mul
+    mul,
+	dateIsValid,
+	dateIsSuperior
 }
