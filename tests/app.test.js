@@ -19,3 +19,13 @@ describe("Scénario 2 Modération", () => {
         expect(app.containsForbiddenWords("Bonjour")).toEqual(false);
     });
 });
+
+describe("Scénario 3 Date", () => {
+    it("Date 1 is superior to Date 2", () => {
+        expect(app.dateIsSuperior("17/02/2001", "17/02/1999")).toEqual(1);
+    });
+
+    it("Date 1 is NOT superior to Date 2", () => {
+        expect(app.dateIsSuperior("17/02/1999", "17/02/2001")).toEqual(-1);
+    });
+});
